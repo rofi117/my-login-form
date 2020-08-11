@@ -9,6 +9,9 @@
  background-image:linear-gradient( 358.3deg,  rgba(255,82,168,1) 12.9%, rgba(177,118,240,1) 134.3% );
  height:900px;
  width:100%;
+ padding-left:10%;
+ padding-right:10%;	
+	 
  
 }
 .card
