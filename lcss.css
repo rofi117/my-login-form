@@ -196,3 +196,23 @@ a.bottom2:hover
  text-decoration:none;
  color:#a64bf4;
 }
+@media screen and (max-width:480px) 
+{
+ input[type="text"]::placeholder ,  input[type="password"]::placeholder
+{
+ font-size:15px;
+}
+.link
+{
+  margin-right:2.0rem;
+  font-size:15px;
+}
+label
+{
+ font-size:15px;
+ }
+.heading
+{
+  font-size: 25px;
+}
+} 
