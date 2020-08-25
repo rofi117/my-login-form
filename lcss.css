@@ -98,10 +98,8 @@ input[type="text"]::placeholder
 input[type="text"]:focus + .bottom-border
 {
  width:77%;
- background:green;
- 
+ background:green; 
 }
-
 .link
 {
  color:#999999;
@@ -113,6 +111,26 @@ a.link:hover
   text-decoration:none;
   color: #a64bf4;
 }
+.password-validation
+{
+ text-align:left;
+ padding:2rem 3rem 0.5rem 3rem;
+ display:none;
+}
+.password-validation span
+{
+  font-size:1rem;
+}
+.fa-times-circle
+{
+ font-size:15px !important;
+ color:red;
+}
+
+.fa-check-circle
+{
+  color:green;
+ }
 .btn.button
 {
  background: linear-gradient(to right, #0099ff 0%, #9966ff 100%);
@@ -201,6 +219,10 @@ a.bottom2:hover
  input[type="text"]::placeholder ,  input[type="password"]::placeholder
 {
  font-size:15px;
+}
+.password-validation span
+{
+  font-size:0.9rem;
 }
 .link
 {
