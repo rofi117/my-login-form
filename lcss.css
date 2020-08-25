@@ -1,34 +1,31 @@
-* 
+*
 {
-	margin: 0px; 
-	padding: 0px; 
-	
+	margin: 0px;
+	padding: 0px;
 }
 .bggradient
 {
  background-image:linear-gradient( 358.3deg,  rgba(255,82,168,1) 12.9%, rgba(177,118,240,1) 134.3% );
- height:900px;
+ height:1050px;
  width:100%;
  padding-left:10%;
- padding-right:10%;	
-	 
- 
+ padding-right:10%;
 }
 .card
 {
  margin:3rem;
  padding-top:3rem;
  background-color:#fff;
-  box-shadow:0px 0px 10px 0px #000;
+ box-shadow:0px 0px 10px 0px #000;
 }
-@media screen and (max-width:620px) 
+@media screen and (max-width:620px)
 {
-  .card 
+  .card
   {
     margin-left: 15px;
     margin-right: 15px;
   }
-} 
+}
 .heading
 {
  font-family:'Aclonica';
@@ -38,19 +35,30 @@ label
 {
  margin:3rem;
  font-family:'Aclonica';
- 
+
 }
 .input-container
 {
  width:100%;
  position:relative;
- 
+
 }
 .fa-user,.fa-lock
 {
- padding:50px;
- color:#d9d9d9;  
+ padding:55px;
+ color:#d9d9d9;
  position:absolute;
+}
+.fa-eye,.fa-eye-slash
+{
+ position:absolute;
+ right:60px;
+ color:#d8d3cd;
+ visibility:visible;
+}
+.fa-eye-slash
+{
+ visibility:hidden;
 }
 .fa-user:focus, .fa-lock:focus
 {
@@ -63,7 +71,14 @@ input[type="text"]
  border:none;
  outline:none;
  font-size:18px;
- color:red;
+ 
+}
+#errormessage
+{
+  text-align:left;
+  margin-top:2px;
+  display:none; 
+  color:red;
 }
 input[type="password"]
 {
@@ -72,39 +87,29 @@ input[type="password"]
  border:none;
  outline:none;
  font-size:18px;
- color:red;
+ 
 }
-input[type="text"]::placeholder
+input[type="text"]::placeholder,input[type="password"]::placeholder
 {
  color: #cccccc;
+ font-size:17px;
 }
 .bottom-border
 {
  width:77%;
  height:2px;
- position:relative;
- background:#d9d9d9;
- z-index:1;
+ 
 }
-.bottom-border:before
+#border1 , #border2
 {
- width:1px;
- z-index:-1;
- position:absolute;
- left:0;
- bottom:0;
- transition: 0.5s width;
+  background-color:#d9d9d9; 
 }
-input[type="text"]:focus + .bottom-border
-{
- width:77%;
- background:green; 
-}
+
 .link
 {
  color:#999999;
  text-align:right;
- margin-right:4.5rem;
+ padding:0px 3rem 0rem 3rem; 
 }
 a.link:hover
 {
@@ -142,10 +147,10 @@ a.link:hover
  position:relative;
 }
 .btn.button:before
-{ background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+{
+ background: #12c2e9;
+ background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
  width:0px;
  height:50px;
  content:"";
@@ -161,7 +166,7 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
  width:100%;
 }
 p
-{ 
+{
  color:#999999;
  text-align:center;
  margin-top:10px;
@@ -181,21 +186,20 @@ a.fa:hover
  text-decoration:none;
  color:white;
  background:black;
- 
 }
-.fa-facebook 
+.fa-facebook
 {
   background: #3B5998;
   color: white;
 }
 
-.fa-twitter 
+.fa-twitter
 {
   background: #55ACEE;
   color: white;
 }
 
-.fa-google 
+.fa-google
 {
   background: #dd4b39;
   color: white;
@@ -214,7 +218,8 @@ a.bottom2:hover
  text-decoration:none;
  color:#a64bf4;
 }
-@media screen and (max-width:480px) 
+
+@media screen and (max-width:480px)
 {
  input[type="text"]::placeholder ,  input[type="password"]::placeholder
 {
@@ -224,9 +229,10 @@ a.bottom2:hover
 {
   font-size:0.9rem;
 }
+ 
 .link
 {
-  margin-right:2.0rem;
+  
   font-size:15px;
 }
 label
@@ -237,4 +243,5 @@ label
 {
   font-size: 25px;
 }
-} 
+}
+
