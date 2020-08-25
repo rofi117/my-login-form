@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
- <meta charset="utf-8">
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="lcss.css" />
   <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
@@ -18,47 +19,55 @@
 
 <body>
  <div class="bggradient">
-  
+
    <div class="row justify-content-center login">
-      <div class="col-md-4 col-12 col-sm-6 card">
+      <div class="col-md-5 col-lg-5 col-12 col-sm-12 card">        
         <h5 class="text-center   heading">Login</h5>
         <label id="username">Username</label>
         <div class="input-container form-inline ">
         <i class='far fa-user' style="font-size:20px;"></i>
-        <input type="text" name="username" class="form-control shadow-none w-75 input1" placeholder="Type your username ">
-        <span class="bottom-border mx-auto" />
-        </div>
+        <input type="text" name="username" id="username" class="form-control shadow-none w-75 input1" placeholder="username">
+        <span class="bottom-border mx-auto"  id="border1" />
         
-         <label id="pass">Password</label>
-        <div class="input-container form-inline">
-        <i class="fa fa-lock" style="font-size:23px;" ></i>
-        <input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  class="form-control w-75  shadow-none input2" placeholder="Type your Password ">
-        <span class="bottom-border mx-auto" />
         </div>
+
+        <label id="pass">Password</label>
+        <div class="input-container form-inline">
+        <i class="fa fa-lock" style="font-size:23px;"></i>
+        <i class="far fa-eye" id="eye" onclick="myFunction()" style = "font-size:22px;"></i>
+        <i class="far fa-eye-slash" id="eye-slash" onclick="myFunction()" style = "font-size:22px;"></i>
+        <input type="password" name="password" id="password"  class="form-control w-75  shadow-none input2" placeholder="Password ">
+        <span class="bottom-border mx-auto" id="border2" />
+        </div>
+       
         <a class="link" href="#">Forget password?</a>
-       <section class = "password-validation" ><ul style="list-style-type:none;">
+         <section class = "password-validation" ><ul style="list-style-type:none;">
           <li><span class = "lowerupper"> <i class="fa fa-times-circle" aria-hidden="true"></i>  &nbsp LowerCase & Uppercase </span></li>
           <li><span class = "number" ><i class="fa fa-times-circle" aria-hidden="true"></i>  &nbsp Number&nbsp(0-9) </span></li>
           <li><span class = "specialcharacter"><i class="fa fa-times-circle" aria-hidden="true"></i>  &nbsp Special Character&nbsp(!@#$%^&*) </span></li>
           <li><span class = "eight" ><i class="fa fa-times-circle" aria-hidden="true"></i>  &nbsp Atleast 8 Character </span></li>
           </ul>
         </section>
-        <button type="button " class=" btn  btn-block button mx-5 w-75 my-5">login</button>
-        <p>Or Sign Up Using</p>
+
+        <button type="button" class="btn  btn-block button mx-5 w-75 my-5" >login</button>
+
+       <p>Or Sign Up Using</p>
        <div class="d-inline mx-auto">
-        <a href="#" class="fa fa-facebook social "></a> 
-        <a href="#" class="fa fa-twitter social "></a>
-        <a href="#" class="fa fa-google social "></a>
+        <a href="#" class="fa fa-facebook social"></a>
+        <a href="#" class="fa fa-twitter social"></a>
+        <a href="#" class="fa fa-google social"></a>
        </div>
        <p class="bottom1 mx-auto">Or Sign Up Using</p>
-       <a href="#" class="bottom2 mx-auto" >SIGN UP</a>
+       <a href="#" class="bottom2 mx-auto">SIGN UP</a>
       </div>
    </div>
 
 
 </div>
+
 <script src="js.js"></script>
 
 
 </body>
 </html>
+
