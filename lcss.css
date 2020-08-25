@@ -215,16 +215,23 @@ a.bottom2:hover
 {
  input[type="text"]::placeholder ,  input[type="password"]::placeholder
 {
- font-size:15px;
+ font-size:16px;
+ text-indent:15px;	
 }
 .password-validation span
 {
   font-size:0.9rem;
 }
- 
-.link
+.fa-user,.fa-lock
 {
-  
+ padding:39px; 
+}
+.fa-eye,.fa-eye-slash
+{ 
+ right:42px; 
+} 
+.link
+{  
   font-size:15px;
 }
 label
